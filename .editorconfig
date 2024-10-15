@@ -3,6 +3,6 @@ root = true
 [*]
 end_of_line = lf
 
-[Casks/**.rb]
+[**.rb]
 indent_size = 2
 indent_style = space
