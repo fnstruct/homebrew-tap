@@ -6,7 +6,7 @@ cask "eloston-chromium" do
          intel: "c965a96a91886cb9eaa8262a7d9408476cf423a7aa555cba2f3e8938eec0ec33"
 
   url "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/#{version}/ungoogled-chromium_#{version}_#{arch}-macos.dmg",
-      verified: "github.com/ungoogled-chromium-macos/"
+      verified: "github.com/ungoogled-software/ungoogled-chromium-macos/"
   name "Ungoogled Chromium"
   desc "Google Chromium, sans intergration with Google"
   homepage "https://ungoogled-software.github.io/"
