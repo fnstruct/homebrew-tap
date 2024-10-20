@@ -15,7 +15,6 @@ cask "eloston-chromium" do
     "chromium",
     "freesmug-chromium",
   ]
-
   depends_on macos: ">= :monterey"
 
   app "Chromium.app"

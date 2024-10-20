@@ -5,13 +5,12 @@ cask "iterm2" do
   url "https://iterm2.com/downloads/stable/iTerm2-#{version.dots_to_underscores}.zip"
   name "iTerm2"
   desc "Alternative terminal emulator to Apple's Terminal app"
-  homepage "https://iterm2.com"
+  homepage "https://iterm2.com/"
 
   conflicts_with cask: [
     "iterm2@beta",
     "iterm2@nightly",
   ]
-
   depends_on macos: ">= :catalina"
 
   app "iTerm.app"
