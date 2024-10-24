@@ -6,6 +6,13 @@ class AirdropCli < Formula
   license "MIT"
   head "https://github.com/vldmrkl/airdrop-cli.git", branch: "main"
 
+  bottle do
+    root_url "https://ghcr.io/v2/fnstruct/tap"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "c7f79992ab498ad60c332be287ef8bd5e965b7fdabaaa9eca101dfa86884d851"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "c8aaab940b64c3137b2cc80aa442563a6735fe6704b4fc50d0d8b697ea95fd84"
+    sha256 cellar: :any_skip_relocation, ventura:       "c7cef4653415c607d0dfb4efeb906f4df151796ee0312ccad3733219fe1b28ba"
+  end
+
   depends_on xcode: :build
   depends_on :macos
 
