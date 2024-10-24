@@ -21,6 +21,6 @@ class Ris < Formula
   end
 
   test do
-    assert_match "ris #{version}", shell_output("#{bin}/ris -version")
+    assert_match version.to_s, shell_output("#{bin}/ris -version")
   end
 end
