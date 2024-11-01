@@ -7,6 +7,13 @@ class FMicro < Formula
   license "MIT"
   head "https://github.com/zyedidia/micro.git", branch: "master"
 
+  bottle do
+    root_url "https://ghcr.io/v2/fnstruct/tap"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "916f83ae37d19d95a7d1f19b65c8c77bc49e8aae45f5f86a225abbd33ab3e048"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:  "95b9fde80f09312cad54d4fad8f028daf56fb5920d7eff1edc6b34115e07ff94"
+    sha256 cellar: :any_skip_relocation, ventura:       "e73f980542c287f77762b49e9996dd48af45967f5aefa0c00f57e2a479d42b12"
+  end
+
   depends_on "go" => :build
 
   conflicts_with "micro", because: "micro installs a conflicting micro binary"
